@@ -30,17 +30,7 @@ soil type.
 * Description : Emergency teams can prioritize regions for response and rescue based on expected impact.
 * Example : Rank areas for aid delivery after an earthquake hits, using model predictions.
 ```
-**Outcomes:**
 
-By the end of the project, students will:
-
-```
-* Understand seismic data and its role in predicting earthquake impacts.
-* Preprocess and analyze geospatial and geophysical features.
-* Train and evaluate machine learning models for classification or regression of earthquake impact.
-* Optionally deploy the model using a simple user interface.
-* Document the model’s performance and results with visualizations.
-```
 ## Dataset:
 
 **Source:** Kaggle
