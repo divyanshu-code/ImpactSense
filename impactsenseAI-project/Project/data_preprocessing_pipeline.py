@@ -208,7 +208,7 @@ def create_complete_preprocessing_pipeline():
     ])
 
 # Create and save pipeline
-pipeline = create_complete_preprocessing_pipeline()
+# pipeline = create_complete_preprocessing_pipeline()
 
 # Test the pipeline (uncomment to test)
 
@@ -221,4 +221,10 @@ pipeline = create_complete_preprocessing_pipeline()
 
 
 # Save pipeline
-joblib.dump(pipeline, 'models/data_preprocessing_pipeline.pkl')
+# joblib.dump(pipeline, 'models/data_preprocessing_pipeline.pkl')
+
+if __name__ == "__main__":
+    pipeline = create_complete_preprocessing_pipeline()
+    os.makedirs('models', exist_ok=True)
+    joblib.dump(pipeline, 'models/data_preprocessing_pipeline.pkl')
+    print("Pipeline saved successfully!")
