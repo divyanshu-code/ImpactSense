@@ -9,4 +9,3 @@ streamlit
 shap
 joblib
 xgboost
-geopandas
