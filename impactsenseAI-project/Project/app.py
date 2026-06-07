@@ -156,8 +156,9 @@ if uploaded_file is None:
     st.stop()
 
 # Fixed paths
-preprocessing_path = "models/data_preprocessing_pipeline.pkl"
-model_path = "models/xgb_risk_model.pkl"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+preprocessing_path = os.path.join(BASE_DIR, "models", "data_preprocessing_pipeline.pkl")
+model_path = os.path.join(BASE_DIR, "models", "xgb_risk_model.pkl")
 
 # Load and standardize raw data
 with st.spinner("📥 Loading & standardizing data..."):
